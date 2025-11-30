@@ -177,72 +177,38 @@ body{
     margin-bottom: 1.25rem;
   }
 
-/* Seção de Contato */
-  .contato{
-    padding: 6rem 2rem;
-    
-  } 
+  /* Seção de Contato */
+.contato{
+  padding: 80px 20px;
 
-  .contato-titulo{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-  }
+}
+.contato-titulo{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--claro);
+}
+.contato-lista {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
 
-  .formulario-contato{
-   max-width: 600px; 
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    padding: 2rem;
-    border: 1px solid var(--vidro);
-    border-radius: 16px;
-  }
+.contato-icone {
+  background: var(--claro);
+  width: 100px;       /* ajuste o tamanho que preferir */
+  height: 100px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
 
-  
-
-  .campo-form{
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid var(--vidro);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--claro);
-    font-size: 1rem;
-    outline:none ;
-
-  }
-
-  .campo-form:focus{
-    border-color: var(--cor-secundaria);
-    box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
-  }
-
-  .grupo-form{
-    margin-bottom: 1.5rem;
-
-  }
-
-  .botao-form{
-    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
-    color: var(--claro);
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-weight: bold;
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    justify-content: center;
-  }
-
-  .botao-form:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
-
-  }
+.contato-item a img:hover {
+  transform: scale(1.1);   /* efeito ao passar o mouse */
+  cursor: pointer;
+}
 
 /* Estilos para Efeitos de Partículas */
 .particulas{
@@ -267,4 +233,31 @@ body{
   50%{
     transform: translateY(-20px);
   }
+}
+
+/* ---------- WhatsApp ---------- */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  background-color: #25D366;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-fixo:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-fixo img {
+  width: 100px;
+  height: 100px;
+  filter: brightness(0) invert(1);
 }
