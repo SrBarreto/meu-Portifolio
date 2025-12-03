@@ -570,3 +570,144 @@ body {
   padding: 10px;
 }
 /* Fim dos Estilos dos Ícones das Ferramentas */
+/* ============ RESPONSIVIDADE ============ */
+
+/* ============================
+   RESPONSIVIDADE MOBILE
+   ============================ */
+
+/* Ajuste geral para telas menores */
+@media (max-width: 768px) {
+  /* --- MENU --- */
+  .menu {
+    gap: 1.2rem;
+  }
+  .menu-link {
+    font-size: 0.9rem;
+  }
+
+  /* --- FOTO DE PERFIL --- */
+  .foto-perfil {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* --- CABEÇALHO --- */
+  .cabecalho h1 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .cabecalho-texto {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  /* --- SOBRE --- */
+  .sobre-titulo {
+    font-size: 2rem;
+  }
+  .sobre-texto {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .sobre-caixa {
+    padding: 1rem;
+  }
+
+  /* --- PROJETOS --- */
+  .projetos-caixa {
+    grid-template-columns: 1fr; /* vira 1 coluna */
+    gap: 1.5rem;
+  }
+
+  .projetos-card {
+    width: 100%;
+  }
+
+  .projeto-imagem {
+    height: 180px;
+  }
+
+  .projetos-titulo {
+    font-size: 2rem;
+  }
+
+  /* --- FERRAMENTAS --- */
+  .scroll-icones {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .icone {
+    width: 80px;
+    height: 80px;
+  }
+
+  .html-icone,
+  .css-icone,
+  .javascript-icone,
+  .python-icone,
+  .git-icone {
+    width: 70px;
+    height: 70px;
+    padding: 4px;
+  }
+
+  /* tooltip some no mobile */
+  .tooltip-box {
+    display: none !important;
+  }
+
+  /* --- CONTATO --- */
+  .contato-titulo {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contato-icone-github,
+  .contato-icone-linkedin {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* --- WhatsApp flutuante --- */
+  .whatsapp-fixo {
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-fixo img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Para telas MUITO pequenas (celulares antigos) */
+@media (max-width: 480px) {
+  .foto-perfil {
+    width: 220px;
+    height: 220px;
+  }
+
+  .menu {
+    gap: 0.8rem;
+  }
+
+  .menu-link {
+    font-size: 0.8rem;
+  }
+
+  .icone {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contato-icone-github,
+  .contato-icone-linkedin {
+    width: 60px;
+    height: 60px;
+  }
+}
